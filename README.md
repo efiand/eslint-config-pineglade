@@ -16,16 +16,6 @@ npm i -DE eslint-config-pineglade
 }
 ```
 
-## Использование в package.json
-
-```json
-{
-  "eslint": {
-    "extends": "pineglade"
-  }
-}
-```
-
 ## Использование в gulpfile.js, webpack.config.js и т. п.
 
 ```js
