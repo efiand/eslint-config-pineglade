@@ -47,6 +47,7 @@ module.exports = {
 			`error`,
 			`tab`
 		],
+		'line-comment-position': `off`,
 		'max-len': [
 			`error`,
 			120
@@ -69,6 +70,7 @@ module.exports = {
 				]
 			}
 		],
+		'no-inline-comments': `off`,
 		'no-magic-numbers': [
 			`error`,
 			{
