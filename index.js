@@ -1,78 +1,75 @@
 'use strict';
 
 module.exports = {
-	extends: `eslint:all`,
+	extends: 'eslint:all',
 	env: {
 		browser: true,
 		node: true
 	},
-	parser: `babel-eslint`,
+	parser: 'babel-eslint',
 	parserOptions: {
 		ecmaVersion: 8,
-		sourceType: `module`
+		sourceType: 'module'
 	},
 	rules: {
-		'arrow-body-style': `off`,
+		'arrow-body-style': 'off',
 		'array-element-newline': [
-			`error`,
-			`consistent`
+			'error',
+			'consistent'
 		],
-		'callback-return': `off`,
+		'callback-return': 'off',
 		'capitalized-comments': [
-			`error`,
-			`always`,
+			'error',
+			'always',
 			{
 				ignoreConsecutiveComments: true,
 				ignoreInlineComments: true
 			}
 		],
 		'dot-location': [
-			`error`,
-			`property`
+			'error',
+			'property'
 		],
 		'function-call-argument-newline': [
-			`error`,
-			`never`
+			'error',
+			'never'
 		],
-		'global-require': `off`,
+		'global-require': 'off',
 		'id-length': [
-			`error`,
+			'error',
 			{
 				exceptions: [
-					`i`
+					'i'
 				]
 			}
 		],
-		indent: [
-			`error`,
-			`tab`
-		],
-		'line-comment-position': `off`,
+		indent: 'off',
+		'line-comment-position': 'off',
 		'max-len': [
-			`error`,
+			'error',
 			120
 		],
-		'max-statements': `off`,
+		'max-statements': 'off',
 		'multiline-comment-style': [
-			`error`,
-			`separate-lines`
+			'error',
+			'separate-lines'
 		],
 		'multiline-ternary': [
-			`error`,
-			`never`
+			'error',
+			'never'
 		],
 		'no-console': [
-			`warn`,
+			'warn',
 			{
 				allow: [
-					`warn`,
-					`error`
+					'warn',
+					'error'
 				]
 			}
 		],
-		'no-inline-comments': `off`,
+		'no-inline-comments': 'off',
 		'no-magic-numbers': [
-			`error`,
+			'error',
 			{
 				ignore: [
 					-1,
@@ -81,71 +78,71 @@ module.exports = {
 				]
 			}
 		],
-		'no-param-reassign': `off`,
-		'no-plusplus': `off`,
-		'no-process-env': `off`,
-		'no-process-exit': `off`,
+		'no-param-reassign': 'off',
+		'no-plusplus': 'off',
+		'no-process-env': 'off',
+		'no-process-exit': 'off',
 		'no-tabs': [
-			`error`,
+			'error',
 			{
 				allowIndentationTabs: true
 			}
 		],
-		'no-ternary': `off`,
-		'no-underscore-dangle': `off`,
+		'no-ternary': 'off',
+		'no-underscore-dangle': 'off',
 		'object-curly-spacing': [
-			`error`,
-			`always`
+			'error',
+			'always'
 		],
 		'object-property-newline': [
-			`error`,
+			'error',
 			{
 				allowAllPropertiesOnSameLine: true
 			}
 		],
 		'one-var': [
-			`error`,
-			`never`
+			'error',
+			'never'
 		],
 		'quote-props': [
-			`error`,
-			`as-needed`
+			'error',
+			'as-needed'
 		],
 		quotes: [
-			`error`,
-			`single`
+			'error',
+			'single'
 		],
 		'padded-blocks': [
-			`error`,
-			`never`
+			'error',
+			'never'
 		],
-		'prefer-named-capture-group': `off`,
-		'require-unicode-regexp': `off`,
+		'prefer-named-capture-group': 'off',
+		'require-unicode-regexp': 'off',
 		semi: [
-			`error`,
-			`always`
+			'error',
+			'always'
 		],
 		'space-before-function-paren': [
-			`error`,
+			'error',
 			{
-				anonymous: `always`,
-				named: `never`,
-				asyncArrow: `always`
+				anonymous: 'always',
+				named: 'never',
+				asyncArrow: 'always'
 			}
 		]
 	},
 	overrides: [
 		{
 			files: [
-				`gulpfile.js/index.js`
+				'gulpfile.js/index.js'
 			],
 			parserOptions: {
-				sourceType: `script`
+				sourceType: 'script'
 			},
 			rules: {
 				strict: [
-					`error`,
-					`global`
+					'error',
+					'global'
 				]
 			}
 		}
