@@ -113,7 +113,7 @@ module.exports = {
 		],
 		quotes: [
 			`error`,
-			`backtick`
+			`single`
 		],
 		'padded-blocks': [
 			`error`,
